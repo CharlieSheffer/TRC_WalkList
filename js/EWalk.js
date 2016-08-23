@@ -23,6 +23,7 @@ function PluginMain(login) {
     intCURRENTVIEW = 1;
 	funcListFromSelect();
     funcChangeView();
+	$("#__debug_banner").hide();
 }
 function funcChangeView(){
 	$('.Results-Container').html('');
@@ -44,7 +45,7 @@ function funcChangeView(){
 			$('.control-buttons .btn:nth-child(1)').text('New List');
 			$('.control-buttons .btn:nth-child(2)').text('MAP');
 			$('.control-buttons .btn:nth-child(3)').text('Walk');
-			$('.control-buttons .btn:nth-child(3)').css('visibility','visible');
+			$('.control-buttons .btn:nth-child(2)').css('visibility','hidden');	
 			$('.control-buttons .btn:nth-child(3)').css('visibility','visible');
 			funcClearStreetField();
 			break;
